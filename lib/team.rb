@@ -53,6 +53,14 @@ class Team
     }
   end
 
+  def average_cost_of_player
+    average = total_value / player_count
+
+    return "$#{average}"
+  end
+
+
+
 
 
 end
