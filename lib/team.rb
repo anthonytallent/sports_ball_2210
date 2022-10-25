@@ -58,9 +58,4 @@ class Team
 
     return "$#{average}"
   end
-
-
-
-
-
 end
