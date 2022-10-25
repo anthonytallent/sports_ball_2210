@@ -38,6 +38,21 @@ class Team
     short_termers
   end
 
+  def total_value
+    cost = 0
+    @roster.each do |player|
+      cost =(player.monthly_cost * player.contract_length) + cost
+    end
+    cost
+  end
+
+  def details
+    {
+      "total_value" => total_value,
+      "player_count" => player_count
+    }
+  end
+
 
 
 end
